@@ -1,0 +1,15 @@
+{
+  "name": "pm-win-api",
+  "version": "1.0.0",
+  "description": "a Node.js C++ addons of Power Macro serving as the under-layer implementation on Windows platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cmake-js": "^7.3.0"
+  }
+}
