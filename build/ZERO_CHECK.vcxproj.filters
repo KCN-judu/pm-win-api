@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Administrator\Desktop\PowerMacroGithub\pm-win-api\build\CMakeFiles\03b8b3c4da454096377a0e83bbc48a5c\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{2555A83C-AA61-3A66-B723-0A018D979E4A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

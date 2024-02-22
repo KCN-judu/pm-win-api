@@ -1,0 +1,19 @@
+cmake_minimum_required(VERSION 3.0)
+project(pm-win-api)
+
+if(MSVC AND CMAKE_JS_NODELIB_DEF AND CMAKE_JS_NODELIB_TARGET)
+  # Generate node.lib
+  execute_process(COMMAND ${CMAKE_AR} /def:${CMAKE_JS_NODELIB_DEF} /out:${CMAKE_JS_NODELIB_TARGET} ${CMAKE_STATIC_LINKER_FLAGS})
+endif()
+
+set(NODE_ADDON_API_DIR node_modules/node-api-headers/include)
+
+include_directories(${NODE_ADDON_API_DIR} ./Inc)
+
+add_library(${CMAKE_PROJECT_NAME} SHARED addon.cc ./Src)
+
+set_target_properties(${PROJECT_NAME} PROPERTIES PREFIX "" SUFFIX ".node")
+
+target_link_libraries(${CMAKE_PROJECT_NAME} ${CMAKE_JS_LIB})
+
+add_definitions(-DNAPI_VERSION=9)

@@ -4,6 +4,7 @@
   "description": "a Node.js C++ addons of Power Macro serving as the under-layer implementation on Windows platform",
   "main": "index.js",
   "scripts": {
+    "install": "cmake-js compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,5 +12,16 @@
   "license": "ISC",
   "devDependencies": {
     "cmake-js": "^7.3.0"
-  }
+  },
+  "dependencies": {
+    "nan": "^2.18.0",
+    "node-gyp": "^10.0.1"
+  },
+  "binary": {
+    "napi_versions": [9]
+  },
+  "cmake-js": {
+		"runtime": "node",
+		"runtimeVersion": "18.18.2"
+	}
 }
