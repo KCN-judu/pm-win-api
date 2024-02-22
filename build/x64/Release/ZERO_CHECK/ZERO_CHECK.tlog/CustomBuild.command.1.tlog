@@ -1,0 +1,10 @@
+^C:\USERS\ADMINISTRATOR\DESKTOP\POWERMACROGITHUB\PM-WIN-API\BUILD\CMAKEFILES\03B8B3C4DA454096377A0E83BBC48A5C\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Administrator/Desktop/PowerMacroGithub/pm-win-api -BC:/Users/Administrator/Desktop/PowerMacroGithub/pm-win-api/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Administrator/Desktop/PowerMacroGithub/pm-win-api/build/pm-win-api.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
