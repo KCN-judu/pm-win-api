@@ -9,9 +9,6 @@
     <CustomBuild Include="C:\Users\Administrator\Desktop\PowerMacroGithub\pm-win-api\CmakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="C:\Users\Administrator\Desktop\PowerMacroGithub\pm-win-api\Src" />
-  </ItemGroup>
-  <ItemGroup>
     <Filter Include="Source Files">
       <UniqueIdentifier>{F1949110-7CC6-3FD1-A753-2070ADAB5BF8}</UniqueIdentifier>
     </Filter>

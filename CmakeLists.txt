@@ -10,7 +10,12 @@ set(NODE_ADDON_API_DIR node_modules/node-api-headers/include)
 
 include_directories(${NODE_ADDON_API_DIR} ./Inc)
 
-add_library(${CMAKE_PROJECT_NAME} SHARED addon.cc ./Src)
+file(GLOB SRC_FILES ./Src/*.cpp)
+add_library(src_lib ${SRC_FILES})
+
+add_library(${CMAKE_PROJECT_NAME} SHARED addon.cc)
+
+target_link_libraries(${CMAKE_PROJECT_NAME} src_lib)
 
 set_target_properties(${PROJECT_NAME} PROPERTIES PREFIX "" SUFFIX ".node")
 
